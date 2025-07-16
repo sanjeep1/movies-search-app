@@ -38,9 +38,9 @@ const MovieDetailPage = () => {
         <img
           src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/300x445?text=No+Image'}
           alt={movie.Title}
-          className="w-full md:w-1/3 object-cover rounded"
+          className="w-full md:w-1/3 object-cover rounded mt-4"
         />
-        <div>
+        <div className='md:w-2/3 mt-4'>
           <p><strong>Genre:</strong> {movie.Genre}</p>
           <p><strong>Director:</strong> {movie.Director}</p>
           <p><strong>Actors:</strong> {movie.Actors}</p>
